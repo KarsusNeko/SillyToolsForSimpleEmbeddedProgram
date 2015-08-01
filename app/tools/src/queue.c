@@ -13,6 +13,11 @@ void queue_init(queue* q)
 	q->size	= 0;
 }
 
+void queue_deinit(queue* q)
+{
+	while(!queue_pop(q));
+}
+
 void queue_push(queue* q, node* nd)
 {
 	nd->next = NULL;
@@ -20,11 +25,8 @@ void queue_push(queue* q, node* nd)
 		q->tail->next = nd;
 	q->tail = nd;
 
-
 	if (q->head == NULL)
 		q->head = nd;
-
-	q->size++;
 }
 
 node* queue_pop(queue* q)
@@ -32,10 +34,8 @@ node* queue_pop(queue* q)
 	node*	tmp;
 	
 	tmp = q->head;
-	if (q->head != NULL) {
+	if (q->head != NULL)
 		q->head = q->head->next;
-		q->size--;
-	}
 
 	return tmp;
 }
@@ -43,11 +43,6 @@ node* queue_pop(queue* q)
 node* queue_top(queue* q)
 {
 	return q->head;
-}
-
-int queue_size(queue* q)
-{
-	return q->size;
 }
 
 #ifdef __cplusplus
