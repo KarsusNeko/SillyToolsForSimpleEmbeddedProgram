@@ -569,13 +569,6 @@
         </Group>
         <Group>
           <GroupName>tools</GroupName>
-          <Files>
-            <File>
-              <FileName>queue.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\app\tools\src\queue.c</FilePath>
-            </File>
-          </Files>
         </Group>
         <Group>
           <GroupName>app</GroupName>
