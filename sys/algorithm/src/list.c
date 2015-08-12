@@ -39,6 +39,8 @@ void list_append(list* l, list_node* ln)
 	}
 }
 
+// Return the pointer of the next node before the node
+// to be deleted may be the best return value.
 list_node* list_remove(list* l, list_node* ln, compar func)
 {
 	list_node* tmp	= l->head;
@@ -72,7 +74,7 @@ list_node* list_remove(list* l, list_node* ln, compar func)
 				tmp->next = NULL;
 				l->tail = tmp;
 			}
-			return rmv;
+			return rmv->next;
 		}
 	}
 
