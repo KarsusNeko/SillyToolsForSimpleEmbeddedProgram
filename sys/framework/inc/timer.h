@@ -12,6 +12,7 @@ void timer_register(timer* timer);
 void timer_unregister(char* name, unsigned char len);
 
 void timer_init();
+void timer_free();
 
 void timer_workflow(timer_list *tl);
 

@@ -16,10 +16,11 @@ typedef struct _dev_ops
 
 typedef struct _dev_node
 {
-	list_node*		node;
+	list_node*		next;
 	unsigned char	dev_id;
 	unsigned short	dev_sub_id;
 	char			dev_name[12];
+	dev_ops			dev_operations;
 } dev_node;
 
 typedef list	dev_list;
