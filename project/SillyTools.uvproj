@@ -610,6 +610,16 @@
               <FileType>1</FileType>
               <FilePath>..\sys\framework\src\timer_list.c</FilePath>
             </File>
+            <File>
+              <FileName>dev_list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\sys\framework\src\dev_list.c</FilePath>
+            </File>
+            <File>
+              <FileName>drivers.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\sys\framework\src\drivers.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -345,7 +345,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\libs\fwlib\inc;..\app\inc;..\app\tools\inc</IncludePath>
+              <IncludePath>..\libs\fwlib\inc;..\app\inc;..\sys\algorithm\inc;..\sys\drivers\inc;..\sys\framework\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -568,17 +568,17 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>tools</GroupName>
+          <GroupName>algorithm</GroupName>
           <Files>
-            <File>
-              <FileName>queue.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\app\tools\src\queue.c</FilePath>
-            </File>
             <File>
               <FileName>list.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\app\tools\src\list.c</FilePath>
+              <FilePath>..\sys\algorithm\src\list.c</FilePath>
+            </File>
+            <File>
+              <FileName>queue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\sys\algorithm\src\queue.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -596,6 +596,24 @@
               <FilePath>..\app\src\stm32f10x_it.c</FilePath>
             </File>
           </Files>
+        </Group>
+        <Group>
+          <GroupName>sys</GroupName>
+          <Files>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\sys\framework\src\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer_list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\sys\framework\src\timer_list.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>drvs</GroupName>
         </Group>
       </Groups>
     </Target>
